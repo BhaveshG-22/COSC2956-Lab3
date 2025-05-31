@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-left a,
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+ }
+
+.nav-right a:last-child {
+    margin-right: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas:
+        "rocket content-top"
+        "rocket content-bottom";
+    align-items: start;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rocket-image {
+    grid-area: rocket;
+    display: flex;
+    align-items: stretch;
+}
+
+.rocket-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
+.content-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top-images {
+    grid-area: content-top;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+
+.top-images img {
+    width: calc(33.333% - 10px);
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+.text-content {
+    grid-area: content-bottom;
+    padding-top: 10px;
+ }
+
+.text-content p {
+    line-height: 1.7;
+    margin-bottom: 1em;
+    text-align: justify;
+    font-size: 0.95em;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+ 
